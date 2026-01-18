@@ -1,21 +1,42 @@
 import { useEffect, useState } from "react";
-import { RES_MENU } from "./constants";
-import { useParams } from "react-router-dom";
+import mockMenu from "../mocks/menu.json";
+
+const USE_MOCK_DATA = true; // 🔥 toggle this anytime
 
 const useRestaurantMenu = (resID) => {
-
   const [resInfo, setResInfo] = useState(null);
-      useEffect(() => {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (!resID) return;
+
+    if (USE_MOCK_DATA) {
+      setLoading(true);
+
+      setTimeout(() => {
+        setResInfo(mockMenu.data);
+        setLoading(false);
+      }, 500);
+
+      return;
+    }
+
     fetchMenu();
-  }, []);
+  }, [resID]);
 
   const fetchMenu = async () => {
-    const data = await fetch(RES_MENU + resID);
-    const json = await data.json();
-    setResInfo(json.data);
+    try {
+      setLoading(true);
+      // real API code stays here (disabled for now)
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  return resInfo;
+  return { resInfo, loading, error };
 };
 
 export default useRestaurantMenu;

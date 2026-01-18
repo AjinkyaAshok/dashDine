@@ -7,9 +7,9 @@ export const RES_LIST =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5912716&lng=73.73890899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const RES_MENU =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5912716&lng=73.73890899999999&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5912716&lng=73.73890899999999&restaurantId=";
 
+export const LOGO =
+  "https://drive.google.com/file/d/1G1t194HN8_7GyWrVC5J7ZJAStD-mIkXw/view?usp=sharing";
 
-export const LOGO = "https://drive.google.com/file/d/1G1t194HN8_7GyWrVC5J7ZJAStD-mIkXw/view?usp=sharing"
-
-export const EMPTY_CART = "https://shidory.com/assets/images/empty_cart.webp"c
+export const EMPTY_CART = "https://shidory.com/assets/images/empty_cart.webp";

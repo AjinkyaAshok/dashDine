@@ -1,0 +1,122 @@
+{
+  "data": {
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "3417",
+              "name": "Subway",
+              "cuisines": ["Healthy Food", "Salads", "Wraps", "Sandwiches"],
+              "costForTwo": 35000
+            }
+          }
+        }
+      },
+
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Recommended",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "101",
+                              "name": "Veggie Delight Sub",
+                              "category": "Recommended",
+                              "price": 19900,
+                              "imageId": "u0b9hx5x9q8p6vksnqlk",
+                              "description": "Fresh veggies with signature sauces on freshly baked bread"
+                            }
+                          }
+                        },
+                        {
+                          "card": {
+                            "info": {
+                              "id": "102",
+                              "name": "Paneer Tikka Sub",
+                              "category": "Recommended",
+                              "price": 24900,
+                              "imageId": "pntk8xkzv3f4l9gqv7j2",
+                              "description": "Grilled paneer with Indian spices and veggies"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Subs",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "201",
+                              "name": "Aloo Patty Sub",
+                              "category": "Subs",
+                              "price": 17900,
+                              "imageId": "aloopx3kqv5z7d9xw",
+                              "description": "Crispy aloo patty with fresh veggies and sauces"
+                            }
+                          }
+                        },
+                        {
+                          "card": {
+                            "info": {
+                              "id": "202",
+                              "name": "Corn & Peas Sub",
+                              "category": "Subs",
+                              "price": 18900,
+                              "imageId": "cornpx8v2q9f5l7d",
+                              "description": "Sweet corn and peas mixed with creamy sauces"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Wraps",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "301",
+                              "name": "Paneer Wrap",
+                              "category": "Wraps",
+                              "price": 21900,
+                              "imageId": "wrap9qv7xk2f5d8",
+                              "description": "Soft wrap stuffed with paneer and sauces"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

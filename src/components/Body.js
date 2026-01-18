@@ -44,7 +44,7 @@ const Body = () => {
     );
 
     setCarousalList(
-      json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info
+     json?.data?.cards[0]?.card?.card?.imageGridCards?.info
     );
     
   };

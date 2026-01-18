@@ -7,7 +7,7 @@ const Contact = () => {
           className="flex flex-col"
           action="mailto:ajinkyaashokghate@gmail.com"
           method="post"
-          enctype="text/plain"
+          encType="text/plain"
         >
           <input
             type="text"

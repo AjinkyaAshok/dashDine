@@ -15,10 +15,10 @@ const RestaurantMenuItems = ({ items }) => {
   const location = useLocation();
   return (
     <div>
-      {items.map((item) => (
+      {items.map((item,index) => (
         <div
           className="flex border mb-2 shadow-sm flex-row justify-between"
-          key={item?.card?.info?.id}
+            key={`${item?.card?.info?.id}-${index}`}
         >
           <div className="flex flex-col p-4">
             <div className="font-semibold mb-4">
@@ -32,11 +32,11 @@ const RestaurantMenuItems = ({ items }) => {
 
           <div className="flex w-40 h-40 flex-col justify-center items-center space-y-2">
             <div className="">
-              <img
+              {/* <img
                 className="w-min rounded-lg h-20"
                 src={RES_ITEMS_IMAGE + item?.card?.info?.imageId}
                 alt=""
-              />
+              /> */}
             </div>
             <div>
               {location.pathname === "/cart" ? (
